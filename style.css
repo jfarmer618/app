@@ -80,7 +80,6 @@ img {
   position: relative;
   transition: transform 1500ms;
   transform-style: preserve-3d;
-  margin: 30px;
 }
 
 .front,
