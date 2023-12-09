@@ -34,7 +34,7 @@ function show_sh13sh11_chord() {
 function show_sh13b9_chord() {
     guide.classList.add('active');
 
-    chordName.innerHTML = '<h3>13 b9 Chord</h3>';
+    chordName.innerHTML = '<h3>13th b9 Chord</h3>';
     lh.innerHTML = '<strong>LEFT HAND:</strong><span>Root chord</span>';
     rh.innerHTML = '<strong>RIGHT HAND:</strong><span>Major chord built on the 6th</span>';
     ex.innerHTML = 'Ex: A/C7, E/G7, C/Eb7, etc';
