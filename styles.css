@@ -59,7 +59,9 @@ body {
     margin: auto;
     border: 2px solid white;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: blue;
     color:whitesmoke;
     line-height: 25px;
@@ -70,7 +72,7 @@ body {
   span {
     color: yellow;
     font-weight: bold; 
-    padding: 20px;
+    padding: 5px;
   }
 
   .ex {
@@ -91,5 +93,5 @@ body {
   }
 
   .lh, .rh {
-    padding-left: 30px;;
+    padding-left: 20px;;
   }
