@@ -5,14 +5,15 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: #ded1d1;
     height: 100vh;
     font-family: 'Lato', sans-serif;
   }
 
   h1 {
+    letter-spacing: 2pt;
     text-align: center;
-    margin-bottom: 50px;
+    margin: 50px;
   }
 
   .chords {
@@ -24,12 +25,13 @@ body {
 
   button {
     cursor: pointer;
-    background-color: blue;
+    background-color: rgb(17, 60, 217);
     color:white;
     border: 1px solid #aaa;
     border-radius: 5px;
-    font-size: 14px;
-    margin: 5px;
+    font-size: 18px;
+    margin-right: 5px;
+    margin-bottom: 20px;
     padding: 5px 15px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
@@ -45,6 +47,7 @@ body {
 
   .guide {
     visibility: hidden;
+    width: 80%;
   }
 
   .guide.active {
@@ -53,28 +56,28 @@ body {
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
-    margin: 50px;
+    margin: auto;
     border: 2px solid white;
     border-radius: 5px;
-    padding: 5px 25px;
+    padding: 10px 20px;
     background-color: blue;
     color:whitesmoke;
     line-height: 25px;
     letter-spacing: 2px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
 
   span {
     color: yellow;
-    font-weight: bold;
-    font-size: larger;
-    padding: 10px;
+    font-weight: bold; 
+    padding: 20px;
   }
 
   .ex {
-    font-size: larger;
     font-weight: bold;
     padding: 20px; 
     color: orange;
+    text-align: center;
   }
 
   .chordName {
@@ -82,5 +85,11 @@ body {
     font-weight: bold;
     color: orange;
     text-align: center;
+    border: 2px solid white;
+    border-radius: 5px; 
+    margin:20px;
   }
-  
+
+  .lh, .rh {
+    padding-left: 30px;;
+  }
