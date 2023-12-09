@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,500,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .chords {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+
+  button {
+    cursor: pointer;
+    background-color: blue;
+    color:white;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 5px;
+    padding: 5px 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  button:active {
+    transform: scale(1.2, 1.2);
+    transition: ease 150ms;
+  }
+
+  .guide {
+    visibility: hidden;
+  }
+
+  .guide.active {
+    visibility: visible;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    margin: 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px 25px;
+    background-color: blue;
+    color:whitesmoke;
+    line-height: 25px;
+    letter-spacing: 2px;
+  }
+
+  span {
+    color: yellow;
+    font-weight: bold;
+    font-size: larger;
+    padding: 10px;
+  }
+
+  .ex {
+    font-size: larger;
+    font-weight: bold;
+    padding: 20px; 
+    color: orange;
+  }
+
+  .chordName {
+    font-size: larger;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+  }
+  

@@ -1,4 +1,3 @@
-# flipcard-tut
- Flipcard tutorial in HTML and CSS
+# Polychords 
 
-[Live Preview](https://htmlpreview.github.io/?https://github.com/russs123/flipcard-tut/blob/main/index.html)
+Guide that shows how to play complex jazz chords using 2 chords (one in left hand and 1 in right hand.

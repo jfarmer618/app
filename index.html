@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <title>Flip Card</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
 </head>
 <body>
-  <div class="container">
-    <div class="card ch-11th">
-      <div class="front">
-        <h1>Polychord</h1>
-        <h2>11th chord</h2>       
-      </div>
-      <!-- <img src="Musical-notes-music-notes-symbols-clip-art-free-clipart-images-2.jpg" -->
-      <!-- class="center" alt="music notes"> -->
-      <div class="back">
-        <h1>11th chord</h1>
-        <p> LEFT HAND: <span> root chord</span></p>
-        <p> RIGHT HAND: <span >chord 1 whole step below</span> </p>
-        <h2> Bb/C, F/G, Db/Eb, etc.</h2>
-      </div>
-      <!-- <img src="Musical-notes-music-notes-symbols-clip-art-free-clipart-images-2.jpg"
-      class="center" alt="music notes"> -->
+    <h1>Polychords Guide</h1>
+    <div class="container">
+        <div class="chords">
+            <button id="11-chord" onclick="show_11_chord()">11th</button>
+            <button id="#11b9-chord" onclick="show_sh11b9_chord()">#11 b9 </button>
+            <button id="13#11-chord" onclick="show_sh13sh11_chord()">13 #11</button>
+            <button id="13b9-chord" onclick="show_sh13b9_chord()">13 b9 </button>
+        </div>
+        <div id="guide" class="guide">
+            <div class="chordName"></div>
+           <!-- <div class="lh"><strong>LEFT HAND:</strong><span>Root chord</span></div>  -->
+           <div class="lh"></div> 
+           <!-- <div class="rh"><strong>RIGHT HAND:</strong><span>Major chord 1 whole step below</span></div> -->
+           <div class="rh"></div>
+           <!-- <div class="ex">Ex: Bb/C, F/G, Db/Eb, etc</div> -->
+           <div class="ex"></div>
+        </div>
     </div>
-  </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
