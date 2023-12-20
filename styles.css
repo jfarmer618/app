@@ -89,9 +89,21 @@ body {
     text-align: center;
     border: 2px solid white;
     border-radius: 5px; 
-    margin:20px;
+    margin: 20px 20px 30px ;
   }
 
   .lh, .rh {
     padding-left: 20px;;
+  }
+
+  #notation {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    background: whitesmoke;
+    max-width: 200px;
   }
