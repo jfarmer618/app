@@ -6,13 +6,43 @@ const chordName = document.querySelector('.chordName');
 const notation = document.getElementById('notation');
 const buttons = document.querySelectorAll('button');
 
-// Add event listener for each button and show Polychord when clicked
 buttons.forEach(button => {
-    button.addEventListener("click", () => {  showPolyChord(button) });
+    button.addEventListener("click", () => {  
+        showPolyChord(button);
+    });
 });
 
-function showPolyChord(e) {
+// Create tone sampler to play piano sound
+const sampler = new Tone.Sampler({
+    urls: {
+        "C4": "C4.mp3"
+    },
+    release: 1,
+    baseUrl: "https://tonejs.github.io/audio/salamander/",
+}).toDestination();
 
+//  Play chord sound based on chord button that is clicked
+ function playChord(chord) {
+    if (chord == "11-chord") {
+        sampler.triggerAttackRelease(["C3", "E3", "G3", "Bb4", "D4", "F4"], 2);
+        console.log("C3", "E3", "G3", "Bb4", "D4", "F4")
+    }
+    if (chord == "13b9-chord") {
+        sampler.triggerAttackRelease(["C3", "E3", "Bb3", "A4", "C#4", "E4"], 2);
+        console.log("C3", "E3", "Bb3", "A4", "C#4", "E4")
+    }  
+    if (chord == "#11b9-chord") {
+        sampler.triggerAttackRelease(["C3", "E3", "G3", "A#4", "C#4", "F#4"], 2);
+        console.log("C3", "E3", "G3", "A#4", "C#4")
+    }
+    if (chord == "13#11-chord") {
+        sampler.triggerAttackRelease(["C3", "E3", "Bb3", "D4", "F#4", "A4"], 2);
+        console.log("C3", "E3", "Bb3", "D4", "F#4", "A4")
+    } 
+ }
+
+
+function showPolyChord(e) {
     //Store id of chord to use in switch statement
     const chord = e.id;
 
@@ -25,6 +55,7 @@ function showPolyChord(e) {
             ex.innerHTML = 'Ex: Bb/C, F/G, Db/Eb, etc';
             notation.innerHTML = '';
             showNotation('11-chord');
+            playChord('11-chord');
             break;
         case '#11b9-chord':
             guide.classList.add('active');
@@ -34,6 +65,7 @@ function showPolyChord(e) {
             ex.innerHTML = 'Ex: F#/C, A/Eb, Db/G, etc';
             notation.innerHTML = '';
             showNotation('#11b9-chord');
+            playChord('#11b9-chord');
             break;
         case '13#11-chord':
             guide.classList.add('active');
@@ -43,6 +75,7 @@ function showPolyChord(e) {
             ex.innerHTML = 'Ex: D/C7, G/F7, C/Bb7, etc';
             notation.innerHTML = '';
             showNotation('13#11-chord');
+            playChord('13#11-chord');
             break;
         case '13b9-chord':
             guide.classList.add('active');
@@ -52,6 +85,7 @@ function showPolyChord(e) {
             ex.innerHTML = 'Ex: A/C7, E/G7, C/Eb7, etc';
             notation.innerHTML = '';
             showNotation('13b9-chord');
+            playChord('13b9-chord');
             break;
         default:
             break;
@@ -153,5 +187,5 @@ function showNotation(chord) {
             vf.draw();
             break;
         }
- }
+    }
 }
