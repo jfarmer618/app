@@ -25,22 +25,17 @@ const sampler = new Tone.Sampler({
  function playChord(chord) {
     if (chord == "11-chord") {
         sampler.triggerAttackRelease(["C3", "E3", "G3", "Bb4", "D4", "F4"], 2);
-        console.log("C3", "E3", "G3", "Bb4", "D4", "F4")
     }
     if (chord == "13b9-chord") {
         sampler.triggerAttackRelease(["C3", "E3", "Bb3", "A4", "C#4", "E4"], 2);
-        console.log("C3", "E3", "Bb3", "A4", "C#4", "E4")
     }  
     if (chord == "#11b9-chord") {
         sampler.triggerAttackRelease(["C3", "E3", "G3", "A#4", "C#4", "F#4"], 2);
-        console.log("C3", "E3", "G3", "A#4", "C#4")
     }
     if (chord == "13#11-chord") {
         sampler.triggerAttackRelease(["C3", "E3", "Bb3", "D4", "F#4", "A4"], 2);
-        console.log("C3", "E3", "Bb3", "D4", "F#4", "A4")
     } 
  }
-
 
 function showPolyChord(e) {
     //Store id of chord to use in switch statement
